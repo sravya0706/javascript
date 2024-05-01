@@ -1,0 +1,76 @@
+        JS
+
+1.In JS execution happens in 2ways 1.memory and 2.code execution
+2.In memory all variables and functions are written in global scope without assigning values to it.
+3.by executing code line by line values are changed and is assigned in memory in variables when consolelog is executed we can see it
+4.call stack is a place where global scope and next function scope and other later is executed step by step.
+5.anything inside function will not come in global scope.
+6. in global scope we get varibles and function
+
+
+
+
+
+FUNCTION WORK IN JS
+1. In function js works line by line code and values will be executed in memory and code execution line
+
+SHORTEST JS PROGRAM
+1.in js along with code execution there will be window object and this object
+2. window object is called in browser but in different sites it is called with different names 
+3. In global scope window object and this is same
+
+
+UNDEFINED VS NOT DEFINED
+1. When variable is defined and value is assigned then it will give result as undefined 
+2. When variable is not defined and value is not assigned then it will give result not defined
+
+SCOPE IN JS
+1. lexical means hierarchy in an order.
+eg; function a (){ function c(){}}
+2. from above c is lexically in a and a is lexically in global environment and for global level lexical environment parent is null
+3. Lexically parent of c is a ie a's space
+4. the way of finding the value of any variable console log of b in c function we go for a's environment and then for global environment and then for null environment
+5. this way of finding is called as scope chain and it defines whether a variable or function is present inside scope or not
+6. Lexical environment of c is local memory of c and its parent lexical environment ie a and its lexical environment ie global environment and this whole chain is called as SCOPE CHAIN
+
+
+HOISTING IN JS (Allocating memory is hoisting)
+Eg : console.log(a);
+     var a=10;
+1. When we execute console log it will give 'a' value as undefined ie var a has its memory allocated before even declaring its value(before intialization or giving value)
+. this is called as hoisting
+2.this type of hoisting happens with VARIABLE keyword and not with let and const 
+3.let and const gives error as cannot access before intialization.
+4.Variable in js is in global object and let and const are not in global but in other script object
+
+TEMPORAL DEAD ZONE
+1. Time between let is hoisted and till when intialization of let has some value is temporal dead zone
+Eg: let a=10
+    console.log(a); 
+
+SYNTAX ERROR
+1.Redeclaration or duplicate of let and const gives syntax error.
+Eg let a = 10
+   let a=20      or let a=10
+                     var a = 10
+2. for const need to declare there only else it gives syntax error
+
+REFERANCE ERROR
+1.When variable is not there in memory and we try to exeute it gives referance error
+2. For let when we try to acess before intialization it gives referance variable
+Eg- console.log(a)
+    let a=10;
+
+TYPE ERROR
+1. Eg : const b=100;
+        b=10000;    gives type error.
+1. it is assignment to const vvariable intialization and declaration there only.
+
+
+CLOSURE IN JS
+1.function in js along with its lexical environment is closure
+
+
+
+
+
